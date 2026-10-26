@@ -1,0 +1,45 @@
+<html>
+<head>
+	<style>
+		.box{
+			height : 150px;
+			width : 150px;
+			background : rgb(34, 0, 128);
+	    margin : 20px;
+			animation-name : movebox;
+			animation-duration : 2s;
+			animation-iteration-count : infinite;
+		}
+		.box2{
+			height : 150px;
+			width : 150px;
+			background : pink;
+			margin : 70px;
+			animation-name : rotatebox;
+			animation-duration : 2s;
+			animation-iteration-count : infinite;
+		}
+		@keyframes movebox{
+			from{
+				transform : translateX(0px);
+			}
+			to{
+				transform : translateX(500px);
+				background : rgb(138, 10, 127);
+			}
+		}
+		@keyframes rotatebox{
+			from{
+				transform:rotate(0deg);
+			}
+			to{
+				transform:rotate(-360deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box2"></div>
+</body>
+</html>
